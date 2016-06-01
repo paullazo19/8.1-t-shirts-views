@@ -1,26 +1,53 @@
 // tshirt view
 
 .view__nav
-  margin-top: 1rem
+  border: 1px solid
+  border-top: none
 
 .view__nav--link
+  border-right: 1px solid
   display: inline-block
+  padding: 1rem
   text-align: center
   width: 20%
+
+.view__nav--link:last-child
+  border-right: none
+
+.view__nav--link
+  .color__current
+    background-color: red
+    color: red
+    padding-top: 1rem
 
 .view__tshirt--flip
   cursor: pointer
   display: block
   padding-right: 1rem
+  padding-top: 0.5rem
   position: relative
   text-align: right
 
 .view__tshirt--name
   display: block
+  font-size: 2rem
+  padding: 0.5rem
 
 .view__tshirt--price
+  font-weight: 700
   float: right
   text-align: right
+
+.item
+  display: block
+
+.view__tshirt--front
+  margin: 0 auto
+  padding-bottom: 3rem
+
+.view__tshirt--back
+  margin: 0 auto
+  padding-bottom: 3rem
 
 .row
   margin: 0 auto
@@ -30,3 +57,10 @@
 li
   display: inline-block
   list-style: none
+
+.carousel
+  border: 1px solid
+
+.shirtSize__icon--default
+  font-size: 2rem
+  vertical-align: bottom
