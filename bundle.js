@@ -25236,154 +25236,110 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'section',
-	      { className: 'row' },
-	      this.props.tshirts.map(function (tshirt, i) {
-	        return _react2.default.createElement(
-	          'div',
-	          { className: 'col-md-4', key: i },
-	          _react2.default.createElement(
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'row' },
+	        this.props.tshirts.map(function (tshirt, i) {
+	          return _react2.default.createElement(
 	            'div',
-	            { className: '' },
+	            { className: 'col-md-4', key: i },
 	            _react2.default.createElement(
 	              'div',
-	              { id: 'imageSwap', className: 'carousel', 'data-ride': 'carousel', 'data-interval': 'false' },
+	              { className: '' },
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'carousel-inner' },
+	                { id: 'imageSwap', className: 'carousel', 'data-ride': 'carousel', 'data-interval': 'false' },
 	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'item active' },
-	                  _react2.default.createElement('img', { src: tshirt.imageUrlFront, className: 'view__tshirt--front' })
+	                  'a',
+	                  { className: 'view__tshirt--flip carousel-swap', href: '#imageSwap', role: 'button', 'data-slide': 'prev' },
+	                  _react2.default.createElement('i', { className: 'flip fa fa-exchange fa-2x', 'aria-hidden': 'true' })
 	                ),
 	                _react2.default.createElement(
 	                  'div',
-	                  { className: 'item' },
-	                  _react2.default.createElement('img', { src: tshirt.imageUrlBack, className: 'view__tshirt--back' })
+	                  { className: 'carousel-inner' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'item active' },
+	                    _react2.default.createElement('img', { src: tshirt.imageUrlFront, className: 'view__tshirt--front' })
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'item' },
+	                    _react2.default.createElement('img', { src: tshirt.imageUrlBack, className: 'view__tshirt--back' })
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
-	                'a',
-	                { className: 'view__tshirt--flip carousel-swap', href: '#imageSwap', role: 'button', 'data-slide': 'prev' },
-	                _react2.default.createElement('i', { className: 'fa fa-exchange', 'aria-hidden': 'true' })
+	                'ul',
+	                { className: 'view__nav' },
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: 'button view__nav--link' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { className: '', href: '#' },
+	                    _react2.default.createElement('i', { className: 'fa fa-exchange fa-2x', 'aria-hidden': 'true' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: 'button view__nav--link' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { className: '', href: '#' },
+	                    _react2.default.createElement('i', { className: 'fa fa-heart-o fa-2x', 'aria-hidden': 'true' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: 'button view__nav--link' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { className: 'shirtSize__icon--default', href: '#' },
+	                    'XL'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: 'button view__nav--link' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'color__current color' },
+	                    'X'
+	                  ),
+	                  _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement('li', { className: 'color' }),
+	                    _react2.default.createElement('li', { className: 'color' }),
+	                    _react2.default.createElement('li', { className: 'color' }),
+	                    _react2.default.createElement('li', { className: 'color' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: 'button view__nav--link' },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { className: '', href: '#' },
+	                    _react2.default.createElement('i', { className: 'fa fa-shopping-cart fa-2x', 'aria-hidden': 'true' })
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'view__tshirt--name' },
+	                tshirt.title,
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'view__tshirt--price' },
+	                  '$' + tshirt.price
+	                )
 	              )
-	            ),
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'view__nav' },
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'button view__nav--link' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { className: '', href: '#' },
-	                  _react2.default.createElement('i', { className: 'fa fa-exchange', 'aria-hidden': 'true' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'button view__nav--link' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { className: '', href: '#' },
-	                  _react2.default.createElement('i', { className: 'fa fa-heart-o', 'aria-hidden': 'true' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'button view__nav--link' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { className: '', href: '#' },
-	                  'XL'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'button view__nav--link' },
-	                _react2.default.createElement('div', { className: 'col or__current color' }),
-	                _react2.default.createElement('a', { className: '', href: '#' }),
-	                _react2.default.createElement(
-	                  'ul',
-	                  null,
-	                  _react2.default.createElement('li', { className: 'color' }),
-	                  _react2.default.createElement('li', { className: 'color' }),
-	                  _react2.default.createElement('li', { className: 'color' }),
-	                  _react2.default.createElement('li', { className: 'color' })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                { className: 'button view__nav--link' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { className: '', href: '#' },
-	                  _react2.default.createElement('i', { className: 'fa fa-shopping-cart', 'aria-hidden': 'true' })
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              { className: 'view__tshirt--name' },
-	              tshirt.title,
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'view__tshirt--price' },
-	                tshirt.price
-	              )
 	            )
-	          )
-	        );
-	      }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'dropup' },
-	        _react2.default.createElement(
-	          'button',
-	          { className: 'btn btn-default dropdown-toggle', type: 'button', id: 'dropdownMenu2', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
-	          'Dropup',
-	          _react2.default.createElement('span', { className: 'caret' })
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenu2' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
-	              'Action'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
-	              'Another action'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
-	              'Something else here'
-	            )
-	          ),
-	          _react2.default.createElement('li', { role: 'separator', className: 'divider' }),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#' },
-	              'Separated link'
-	            )
-	          )
-	        )
+	          );
+	        })
 	      )
 	    );
 	  }
