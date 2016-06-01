@@ -5,7 +5,7 @@
   border-top: none
 
 .view__nav--link
-  border-right: 1px solid
+  border-radius: 0
   display: inline-block
   padding: 1rem
   text-align: center
@@ -14,19 +14,16 @@
 .view__nav--link:last-child
   border-right: none
 
-.view__nav--link
-  .color__current
-    background-color: red
-    color: red
-    padding-top: 1rem
-
 .view__tshirt--flip
   cursor: pointer
-  display: block
-  padding-right: 1rem
-  padding-top: 0.5rem
+  display: inline-block
+  float: right
+  padding: 1rem
   position: relative
   text-align: right
+  border-left: 1px solid $brand-primary
+  border-bottom: 1px solid $brand-primary
+
 
 .view__tshirt--name
   display: block
@@ -64,3 +61,61 @@ li
 .shirtSize__icon--default
   font-size: 2rem
   vertical-align: bottom
+
+.glyphicon
+  font-size: 2rem
+
+.dropdown-menu
+  left: 50%
+  min-width: 1rem
+  transform: translateX(-50%)
+
+.dropdown-menu
+  li
+    display: block
+    font-size: 2rem
+    float: left
+    text-align: center
+
+.dropdown-color
+  width: 4.5rem
+  height: 4.5rem
+
+  li
+    display: inline-block
+
+  .color
+    margin-right: 0.25rem
+    margin-left: 0.25rem
+
+.dropdown-toggle
+  color: $brand-primary
+  font-size: 2rem
+
+.color
+  display: inline-block
+  position: relative
+  height: 1.5rem
+  width: 1.5rem
+
+.color--blue
+  background-color: $brand-primary
+
+.color--red
+  background-color: $brand-danger
+
+.color--green
+  background-color: $brand-success
+
+.color--yellow
+  background-color: $brand-warning
+
+.color--lightBlue
+  background-color: $brand-info
+
+.btn
+  border: none
+  border-right: 1px solid
+
+.glyphicon
+  font-size: 2.5rem

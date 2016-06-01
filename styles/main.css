@@ -8074,7 +8074,7 @@ body {
   border-top: none; }
 
 .view__nav--link {
-  border-right: 1px solid;
+  border-radius: 0;
   display: inline-block;
   padding: 1rem;
   text-align: center;
@@ -8083,18 +8083,15 @@ body {
 .view__nav--link:last-child {
   border-right: none; }
 
-.view__nav--link .color__current {
-  background-color: red;
-  color: red;
-  padding-top: 1rem; }
-
 .view__tshirt--flip {
   cursor: pointer;
-  display: block;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
+  display: inline-block;
+  float: right;
+  padding: 1rem;
   position: relative;
-  text-align: right; }
+  text-align: right;
+  border-left: 1px solid #337ab7;
+  border-bottom: 1px solid #337ab7; }
 
 .view__tshirt--name {
   display: block;
@@ -8132,5 +8129,60 @@ li {
 .shirtSize__icon--default {
   font-size: 2rem;
   vertical-align: bottom; }
+
+.glyphicon {
+  font-size: 2rem; }
+
+.dropdown-menu {
+  left: 50%;
+  min-width: 1rem;
+  transform: translateX(-50%); }
+
+.dropdown-menu li {
+  display: block;
+  font-size: 2rem;
+  float: left;
+  text-align: center; }
+
+.dropdown-color {
+  width: 4.5rem;
+  height: 4.5rem; }
+  .dropdown-color li {
+    display: inline-block; }
+  .dropdown-color .color {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem; }
+
+.dropdown-toggle {
+  color: #337ab7;
+  font-size: 2rem; }
+
+.color {
+  display: inline-block;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem; }
+
+.color--blue {
+  background-color: #337ab7; }
+
+.color--red {
+  background-color: #d9534f; }
+
+.color--green {
+  background-color: #5cb85c; }
+
+.color--yellow {
+  background-color: #f0ad4e; }
+
+.color--lightBlue {
+  background-color: #5bc0de; }
+
+.btn {
+  border: none;
+  border-right: 1px solid; }
+
+.glyphicon {
+  font-size: 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */
